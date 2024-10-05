@@ -1,3 +1,4 @@
 ---
-vector_version: "0.41.1"
-vector_rpm_version: "0.41.1-1"
+
+vector_version: "{{ vector_version }}"
+vector_rpm_version: "{{ vector_rpm_version }}"
