@@ -1,7 +1,7 @@
 ansible-vector
 =========
 
-Simple Vector deploy and management role.
+This role install Vector
 
 
 Role Variables
@@ -25,13 +25,13 @@ Including an example of how to use your role (for instance, with variables passe
 ```yaml
   - hosts: vector_host 
     roles:
-      - { }
+      - { role: vector }
 ```
 
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
