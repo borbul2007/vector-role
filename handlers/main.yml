@@ -1,4 +1,5 @@
 ---
+
 - name: Restart vector service
   become: true
     ansible.builtin.service:
