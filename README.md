@@ -3,7 +3,6 @@ ansible-vector
 
 This role install Vector
 
-
 Role Variables
 --------------
 
