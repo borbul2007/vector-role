@@ -15,7 +15,7 @@ vector_version: "0.41.1"
 Configure
 --------
 
-Refer the file templates/vector.toml.j2 to change the default values for Vector.
+Refer the file templates/vector.toml.j2 to change the default values for Vector
 
 Example Playbook
 ----------------
