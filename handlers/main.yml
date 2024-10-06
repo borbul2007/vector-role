@@ -2,6 +2,6 @@
 
 - name: Restart vector service
   become: true
-    ansible.builtin.service:
-      name: vector
-      state: restarted
+  ansible.builtin.service:
+    name: vector
+    state: restarted
