@@ -3,7 +3,7 @@ galaxy_info:
   description: This role install Vector
   company: Netology
 
-license: MIT
+#license: MIT
 min_ansible_version: 2.10
 
 platforms:
