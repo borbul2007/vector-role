@@ -1,0 +1,20 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint: |
+  ansible-lint .
+  yamllint .
+platforms:
+  - name: oraclelinux-8
+    image: oraclelinux:8
+    pre_build_image: true
+  - name: ubuntu-latest
+    image: ubuntu
+    pre_build_image: true
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
+role_name_check: 1
