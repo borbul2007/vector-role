@@ -9,9 +9,11 @@ lint: |
 platforms:
   - name: oraclelinux-8
     image: oraclelinux:8
+    systemd: always
     pre_build_image: true
   - name: ubuntu-latest
     image: ubuntu
+    systemd: always
     pre_build_image: true
 provisioner:
   name: ansible
