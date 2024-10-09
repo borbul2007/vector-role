@@ -4,7 +4,6 @@ dependencies: []
 galaxy_info:
   role_name: vector-role
   galaxy_name: vector-role
-  namespace: netology
   author: Boris
   description: This role install Vector
   company: "Netology"
