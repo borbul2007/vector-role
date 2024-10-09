@@ -10,11 +10,9 @@ platforms:
   - name: oraclelinux-8
     image: oraclelinux:8
     pre_build_image: true
-    privileged: true
   - name: ubuntu-latest
-    image: ubuntu:latest
+    image: ubuntu
     pre_build_image: true
-    privileged: true
 provisioner:
   name: ansible
 verifier:
