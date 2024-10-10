@@ -10,7 +10,7 @@ galaxy_info:
   license: "MIT"
   min_ansible_version: 2.10
   platforms:
-    - name: AlmaLinux
+    - name: RedHat-Based
       versions:
         - 8
         - 9
