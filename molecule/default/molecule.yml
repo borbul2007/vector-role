@@ -5,9 +5,9 @@ lint: |
   ansible-lint .
   yamllint .
 platforms:
-  - name: instance
+  - name: rockylinux9
 #    image: quay.io/centos/centos:stream9
-    image: nmusatti/centos-stream8-pys
+    image: nmusatti/rockylinux9-pys
     pre_build_image: true
 
 #  - name: oraclelinux-8
