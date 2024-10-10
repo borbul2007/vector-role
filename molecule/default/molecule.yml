@@ -6,11 +6,10 @@ lint: |
   ansible-lint .
   yamllint .
 platforms:
-#  - name: rockylinux-9
-#    image: nmusatti/rockylinux9-pys-systemd
-#    pre_build_image: true
-  - name: centos-stream-9
-#    image: nmusatti/centos-stream9-pys-systemd
+  - name: AlmaLinux-8
+    image: ghcr.io/bpadair32/docker-image-alma8-systemd:latest
+    pre_build_image: true
+  - name: AlmaLinux-9
     image: ghcr.io/bpadair32/docker-image-alma9-systemd:latest
     pre_build_image: true
 provisioner:
