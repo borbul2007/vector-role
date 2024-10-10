@@ -6,10 +6,10 @@ lint: |
   ansible-lint .
   yamllint .
 platforms:
-  - name: AlmaLinux-8
-    image: bviktor/ansible-systemd-almalinux:8
+#  - name: AlmaLinux-8
+#    image: bviktor/ansible-systemd-almalinux:8
 #    image: ghcr.io/hifis-net/almalinux-systemd:8
-    pre_build_image: true
+#    pre_build_image: true
   - name: AlmaLinux-9
     image: bviktor/ansible-systemd-almalinux:9
 #    image: ghcr.io/hifis-net/almalinux-systemd:9
