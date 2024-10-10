@@ -6,7 +6,7 @@ lint: |
   yamllint .
 platforms:
   - name: rockylinux-9
-    image: nmusatti/rockylinux8-pys-systemd
+    image: nmusatti/rockylinux9-pys-systemd
     pre_build_image: true
 #  - name: centos-stream-9
 #    image: nmusatti/centos-stream8-pys-systemd
