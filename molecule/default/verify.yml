@@ -1,8 +1,9 @@
 ---
+
 - name Verify
   hosts: all
   gather_facts: false
-  task:
-  - name: Assertion
-    assert:
-      that: true
+  tasks:
+    - name: Assertion
+      assert:
+        that: true
