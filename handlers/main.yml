@@ -4,5 +4,4 @@
   become: true
   ansible.builtin.service:
     name: vector
-    pattern: ""
     state: restarted
