@@ -1,6 +1,4 @@
 ---
-#dependency:
-#  name: galaxy
 driver:
   name: docker
 lint: |
@@ -8,7 +6,7 @@ lint: |
   yamllint .
 platforms:
   - name: instance
-    image: quay.io/centos/centos:stream8
+    image: quay.io/centos/centos:stream9
     pre_build_image: true
 
 #  - name: oraclelinux-8
@@ -31,9 +29,9 @@ platforms:
 #    pre_build_image: true
 provisioner:
   name: ansible
-  env:
-    ANSIBLE_LOCAL_TEMP: "${WORKSPACE:-$HOME}/.ansible/tmp"
-    ANSIBLE_REMOTE_TMP: /tmp
+#  env:
+#    ANSIBLE_LOCAL_TEMP: "${WORKSPACE:-$HOME}/.ansible/tmp"
+#    ANSIBLE_REMOTE_TMP: /tmp
 verifier:
   name: ansible
-role_name_check: 1
+#role_name_check: 1
