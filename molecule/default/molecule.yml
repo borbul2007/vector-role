@@ -8,8 +8,8 @@ platforms:
   - name: rockylinux-8
     image: nmusatti/rockylinux8-pys-systemd
     pre_build_image: true
-  - name: fedora-37
-    image: nmusatti/fedora37-pys-systemd
+  - name: centos-stream-8
+    image: nmusatti/centos-stream8-pys-systemd
     pre_build_image: true
 provisioner:
   name: ansible
