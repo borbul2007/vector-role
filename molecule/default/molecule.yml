@@ -7,7 +7,7 @@ lint: |
 platforms:
   - name: instance
 #    image: quay.io/centos/centos:stream9
-    image: geerlingguy/docker-debian10-ansible:latest
+    image: nmusatti/centos-stream9-pys
     pre_build_image: true
 
 #  - name: oraclelinux-8
