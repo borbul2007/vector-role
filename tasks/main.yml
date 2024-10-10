@@ -1,8 +1,8 @@
 ---
 # tasks file
 
-- include_tasks: install/package.yml
-  tags: [always]
+#- include_tasks: install/package.yml
+#  tags: [always]
 - include_tasks: install/install.yml
   tags: [always]
 - include_tasks: configure/configure.yml
