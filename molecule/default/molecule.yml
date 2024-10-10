@@ -5,9 +5,13 @@ lint: |
   ansible-lint .
   yamllint .
 platforms:
-  - name: rockylinux9
+  - name: rockylinux8
 #    image: quay.io/centos/centos:stream9
-    image: nmusatti/rockylinux9-pys
+    image: nmusatti/rockylinux8-pys-systemd
+    pre_build_image: true
+  - name: fedora
+#    image: quay.io/centos/centos:stream9
+    image: fedora-pys-systemd
     pre_build_image: true
 
 #  - name: oraclelinux-8
