@@ -10,7 +10,8 @@ platforms:
 #    image: nmusatti/rockylinux9-pys-systemd
 #    pre_build_image: true
   - name: centos-stream-9
-    image: nmusatti/centos-stream9-pys-systemd
+#    image: nmusatti/centos-stream9-pys-systemd
+    image: nmusatti/centos-stream9-pys
     pre_build_image: true
 provisioner:
   name: ansible
