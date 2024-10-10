@@ -7,10 +7,12 @@ lint: |
   yamllint .
 platforms:
   - name: AlmaLinux-8
-    image: ghcr.io/bpadair32/docker-image-alma8-systemd:latest
+#    image: ghcr.io/bpadair32/docker-image-alma8-systemd:latest
+    image: ghcr.io/hifis-net/almalinux-systemd:8
     pre_build_image: true
   - name: AlmaLinux-9
-    image: ghcr.io/bpadair32/docker-image-alma9-systemd:latest
+#    image: ghcr.io/bpadair32/docker-image-alma9-systemd:latest
+    image: ghcr.io/hifis-net/almalinux-systemd:9
     pre_build_image: true
 provisioner:
   name: ansible
