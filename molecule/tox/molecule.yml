@@ -1,11 +1,9 @@
 ---
-dependency:
-  name: galaxy
 driver:
   name: podman
 platforms:
   - name: almalinux9
-    image: bviktor/ansible-systemd-almalinux:9
+    image: ghcr.io/hifis-net/almalinux-systemd:9
     pre_build_image: true
 scenario:
   test_sequence:
