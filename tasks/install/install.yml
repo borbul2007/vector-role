@@ -9,8 +9,8 @@
 #  notify: Restart vector service
 
 - name: Install vector packages
-  become: true
-  become_user: root
+#  become: true
+#  become_user: root
   ansible.builtin.yum:
     use_backend: yum
     name: "https://yum.vector.dev/stable/vector-0/x86_64/vector-{{ vector_rpm_version }}.x86_64.rpm"
