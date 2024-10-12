@@ -3,9 +3,6 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint: |
-  ansible-lint .
-  yamllint .
 platforms:
   - name: almalinux8
     image: ghcr.io/hifis-net/almalinux-systemd:8
