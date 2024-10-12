@@ -1,5 +1,4 @@
 ---
-
 - name: Replace vector configuration file
   become: true
   become_user: root
