@@ -5,3 +5,4 @@
     dest: "./vector-{{ vector_rpm_version }}.x86_64.rpm"
     mode: "0755"
   with_items: "{{ vector_version }}"
+  
