@@ -1,7 +1,7 @@
 ---
 - name: Converge
   hosts: all
-#  gather_facts: false
+  gather_facts: false
   tasks:
     - name: "Install Vector"
       include_role:
