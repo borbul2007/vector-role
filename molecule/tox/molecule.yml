@@ -2,6 +2,7 @@
 driver:
   name: podman
 platforms:
-  - name: instance
-    image: quay.io/centos/centos:stream8
+platforms:
+  - name: AlmaLinux-9
+    image: bviktor/ansible-systemd-almalinux:9
     pre_build_image: true
