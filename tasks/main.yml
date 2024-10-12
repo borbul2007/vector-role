@@ -3,7 +3,12 @@
 
 #- include_tasks: install/package.yml
 #  tags: [always]
-- include_tasks: install/install.yml
+- name: VECTOR | Install
+- include_tasks: install.yml
   tags: [always]
-- include_tasks: configure/configure.yml
+- name: VECTOR | Configure
+- include_tasks: configure.yml
   tags: [always]
+#- name: VECTOR | Service
+#  include_tasks: service.yml
+#  tags: [always]

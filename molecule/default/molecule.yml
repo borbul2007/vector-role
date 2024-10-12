@@ -8,7 +8,7 @@ lint: |
   yamllint .
 platforms:
   - name: centos8
-    image: docker.io/pycontribs/centos:8
+    image: docker.io/pycontribs/ubuntu
     pre_build_image: true
 #  - name: almalinux8
 #    image: bviktor/ansible-systemd-almalinux:8
