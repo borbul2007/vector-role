@@ -3,6 +3,6 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: Assertion
-      assert:
-        that: true
+  - name: Assertion
+    assert:
+      that: true
