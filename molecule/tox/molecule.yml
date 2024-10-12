@@ -2,7 +2,6 @@
 driver:
   name: podman
 platforms:
-platforms:
   - name: almalinux9
     image: bviktor/ansible-systemd-almalinux:9
     pre_build_image: true
