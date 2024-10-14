@@ -1,8 +1,8 @@
 ---
 - name: Run Vector
   shell: nohup /opt/vector-x86_64-unknown-linux-musl/bin/vector --config /opt/vector-x86_64-unknown-linux-musl/config/vector.yaml --watch-config &
-  register: run
+  register: vecor_run
   changed_when: false
 
 - debug:
-    var: run
+    var: vector_run
