@@ -1,4 +1,13 @@
 ---
+  tasks:
+  - name: store the files in the /tmp/foo directory in the 'out' variable
+    ansible.builtin.find:
+      paths: /opt/vector
+    register: out
+
+  - debug:
+      var: out
+
 - name: Extract Vector archive file 
   unarchive:
     src: "/opt/vector/vector-{{ vector_version }}-x86_64-unknown-linux-musl.tar.gz"
