@@ -1,7 +1,5 @@
 ---
 - name: Replace vector configuration file
-  become: true
-  become_user: root
   template:
     src=templates/vector.toml.j2
-    dest=/etc/vector/vector.yaml
+    dest=/opt/vector/vector.yaml
