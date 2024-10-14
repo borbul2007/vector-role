@@ -1,6 +1,0 @@
----
-- name: Download Vector
-  get_url:
-    url: "https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-x86_64-unknown-linux-musl.tar.gz"
-    dest: /opt/vector/
-    mode: '0600'

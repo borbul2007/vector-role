@@ -3,7 +3,6 @@
   become: true
   become_user: root
   unarchive:
-#    src: "/opt/vector/vector-{{ vector_version }}-x86_64-unknown-linux-musl.tar.gz"
     src: "https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-x86_64-unknown-linux-musl.tar.gz"
     dest: /opt
     remote_src: yes

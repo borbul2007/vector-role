@@ -1,9 +1,5 @@
 ---
-- include_tasks: create.yml
-  tags: [always]
-#- include_tasks: download.yml
-#  tags: [always]
-- include_tasks: extract.yml
+- include_tasks: install.yml
   tags: [always]
 - include_tasks: configure.yml
   tags: [always]
