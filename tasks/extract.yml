@@ -1,6 +1,6 @@
 ---
 - name: Extract Vector archive file 
-  become: tue
+  become: true
   become_user: root
   unarchive:
     src: "/opt/vector/vector-{{ vector_version }}-x86_64-unknown-linux-musl.tar.gz"
