@@ -3,15 +3,22 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: Exist vector.conf
+    - name: Vector config find
       ansible.builtin.find:
         paths: /opt/vector-x86_64-unknown-linux-musl/config
         patterns: 'vector.yaml'
       register: vector_conf
 
-    - debug:
-        var:
-          vector_conf
+#    - debug:
+#        var:
+#          vector_conf
+
+  - name: Vector config
+    assert:
+      that:
+        - vector_conf.failed == false
+      success_msg: "Vector config exists"
+      fail_msg: "Vector config no exists
 
 #  - name: Vector launched
 #    assert:
