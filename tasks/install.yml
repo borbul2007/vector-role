@@ -1,8 +1,9 @@
 ---
-- name: Install Vector from archive file 
-  become: true
-  become_user: root
+- name: Install Vector 
+#  become: true
+#  become_user: root
   unarchive:
     src: "https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-x86_64-unknown-linux-musl.tar.gz"
     dest: /opt
     remote_src: yes
+  changed_when: false

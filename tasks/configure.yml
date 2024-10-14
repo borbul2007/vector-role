@@ -1,5 +1,6 @@
 ---
-- name: Replace vector configuration file
+- name: Configure Vector
   template:
     src=templates/vector.toml.j2
     dest=/opt/vector-x86_64-unknown-linux-musl/config/vector.yaml
+  changed_when: false
