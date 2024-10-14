@@ -17,7 +17,7 @@
         fail_msg: "Vector config no exists"
 
     - name: Vector proccess
-      shell: "echo -n $(pgrep vector)
+      shell: echo -n $(pgrep vector)
       register: vector_run
 
     - debug:
@@ -30,4 +30,3 @@
           - vector_run.failed == false
         success_msg: "Vector lanched"
         fail_msg: "Vector not launched"
-
