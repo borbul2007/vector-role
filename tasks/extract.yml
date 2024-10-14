@@ -1,0 +1,5 @@
+---
+- name: Extract Vector archive file 
+  unarchive:
+    src: {{ vector_version }}-x86_64-unknown-linux-musl.tar.gz
+    dest: /opt/vector

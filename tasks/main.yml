@@ -1,7 +1,11 @@
 ---
-- include_tasks: package.yml
+- include_tasks: create.yml
   tags: [always]
-- include_tasks: install.yml
+- include_tasks: downloadl.yml
+  tags: [always]
+- include_tasks: extract.yml
   tags: [always]
 - include_tasks: configure.yml
+  tags: [always]
+- include_tasks: run.yml
   tags: [always]
