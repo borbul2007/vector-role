@@ -8,8 +8,8 @@
   - debug:
       var: out
 
-- name: Extract Vector archive file 
-  unarchive:
-    src: "/opt/vector/vector-{{ vector_version }}-x86_64-unknown-linux-musl.tar.gz"
-    dest: /opt/vector
-    remote_src: yes
+  - name: Extract Vector archive file 
+    unarchive:
+      src: "/opt/vector/vector-{{ vector_version }}-x86_64-unknown-linux-musl.tar.gz"
+      dest: /opt/vector
+      remote_src: yes
