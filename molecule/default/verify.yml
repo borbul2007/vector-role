@@ -4,7 +4,7 @@
   gather_facts: false
   tasks:
     - name: Vector config find
-      ansible.builtin.find:
+      find:
         paths: /opt/vector-x86_64-unknown-linux-musl/config
         patterns: 'vector.yaml'
       register: vector_conf
@@ -16,9 +16,10 @@
         success_msg: "Vector config exists"
         fail_msg: "Vector config no exists"
 
-#    - name: Vector proccess
-#      shell: echo -n $(pgrep vector)
-#      register: vector_run
+    - name: Vector proccess
+      community.general.pids:
+        name: vector
+      register: vector_run
 
 #    - debug:
 #        var:
