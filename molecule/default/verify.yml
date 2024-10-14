@@ -21,9 +21,9 @@
         name: vector
       register: vector_run
 
-#    - debug:
-#        var:
-#          vector_run
+    - debug:
+        var:
+          vector_run
 
 #    - name: Vector launched
 #      assert:
