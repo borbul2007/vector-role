@@ -7,3 +7,4 @@
     dest: /opt
     remote_src: yes
   changed_when: false
+  

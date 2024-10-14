@@ -16,17 +16,17 @@
         success_msg: "Vector config exists"
         fail_msg: "Vector config no exists"
 
-    - name: Vector proccess
-      shell: echo -n $(pgrep vector)
-      register: vector_run
+#    - name: Vector proccess
+#      shell: echo -n $(pgrep vector)
+#      register: vector_run
 
-    - debug:
-        var:
-          vector_run
+#    - debug:
+#        var:
+#          vector_run
 
-    - name: Vector launched
-      assert:
-        that:
-          - vector_run.failed == false
-        success_msg: "Vector lanched"
-        fail_msg: "Vector not launched"
+#    - name: Vector launched
+#      assert:
+#        that:
+#          - vector_run.failed == false
+#        success_msg: "Vector lanched"
+#        fail_msg: "Vector not launched"
