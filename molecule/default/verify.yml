@@ -5,5 +5,5 @@
   tasks:
   - name: Vector launched
     assert:
-      that
-        run.failed == false
+      that:
+        - run.failed == false
