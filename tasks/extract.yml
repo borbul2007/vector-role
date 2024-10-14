@@ -16,9 +16,4 @@
   register: out
 
 - debug:
-    msg: "{{ item.path }}"
-    with_items: "{{ out.files }}"
-    when: out.matched > 0
-    loop_control:
-      label: "{{ item.path }}"
-
+     var: out
