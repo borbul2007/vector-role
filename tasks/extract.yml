@@ -10,7 +10,7 @@
 
 - name: store the files in the /tmp/foo directory in the 'out' variable
   find:
-    paths: /opt
+    paths: /opt/vector-x86_64-unknown-linux-musl/
     recurse: true
     use_regex: true
     patterns: (?i).*vector
