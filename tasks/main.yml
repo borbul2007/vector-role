@@ -3,5 +3,5 @@
   tags: [always]
 - include_tasks: configure.yml
   tags: [always]
-- include_tasks: run.yml
-  tags: [always]
+#- include_tasks: run.yml
+#  tags: [always]
