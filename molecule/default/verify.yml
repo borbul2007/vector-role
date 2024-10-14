@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: false
   tasks:
-  - name: Vector is start
+  - name: Vector launched
     assert:
-      launch.failed
-        that: false
+      that
+        run.failed == false
