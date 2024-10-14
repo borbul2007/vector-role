@@ -6,4 +6,4 @@
   - name: Vector launched
     assert:
       that:
-        - run.failed == false
+        - not run.failed
