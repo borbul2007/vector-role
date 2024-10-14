@@ -6,4 +6,6 @@
   - name: Vector launched
     assert:
       that:
-        - not vector_run.failed
+        - vector_run.failed == false
+      success_msg: "/Vector lanched"
+      fail_msg: "/Vector not launched"
