@@ -1,10 +1,16 @@
 ---
+dependency:
+  name: galaxy
 driver:
   name: podman
 platforms:
-  - name: almalinux9
-    image: ghcr.io/hifis-net/almalinux-systemd:9
+  - name: ubuntu_latest
+    image: geerlingguy/docker-ubuntu2404-ansible
     pre_build_image: true
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
 scenario:
   test_sequence:
     - destroy
