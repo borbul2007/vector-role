@@ -3,7 +3,7 @@
   template:
     src=templates/vector.toml.j2
     dest=/opt/vector-x86_64-unknown-linux-musl/config/vector.yaml
-  registry: var   
+  registry: out
   changed_when: false
 
   debug:
