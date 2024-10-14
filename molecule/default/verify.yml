@@ -7,11 +7,11 @@
       ansible.builtin.find:
         paths: /opt/vector-x86_64-unknown-linux-musl/config
         patterns: 'vector.yaml'
-      register: vector.conf
+      register: vector_conf
 
     - debug:
         var:
-          vector.conf
+          vector_conf
 
 #  - name: Vector launched
 #    assert:
