@@ -17,17 +17,16 @@
         fail_msg: "Vector config no exists"
 
     - name: Vector proccess
-      community.general.pids:
-        name: vector
+      shell: nohup /opt/vector-x86_64-unknown-linux-musl/bin/vector --config /opt/vector-x86_64-unknown-linux-musl/config/vector.yaml --watch-config &
       register: vector_run
 
-    - debug:
-        var:
-          vector_run
+#    - debug:
+#        var:
+#          vector_run
 
-#    - name: Vector launched
-#      assert:
-#        that:
-#          - vector_run.failed == false
-#        success_msg: "Vector lanched"
-#        fail_msg: "Vector not launched"
+    - name: Vector launched
+      assert:
+        that:
+          - vector_run.failed == false
+        success_msg: "Vector lanched"
+        fail_msg: "Vector not launched"

@@ -7,8 +7,8 @@ platforms:
   - name: ubuntu_latest
     image: geerlingguy/docker-ubuntu2404-ansible
     pre_build_image: true
-  - name: oracle_linux_8
-    image: kirillzak/docker-oraclelinux-ansible:8.8
+#  - name: oracle_linux_8
+#    image: kirillzak/docker-oraclelinux-ansible:8.8
     pre_build_image: true
 provisioner:
   name: ansible
