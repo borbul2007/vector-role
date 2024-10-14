@@ -10,7 +10,7 @@
 
 - name: store the files in the /tmp/foo directory in the 'out' variable
   find:
-    paths: /opt/vector
+    paths: /opt
     recurse: true
     use_regex: true
     patterns: (?i).*vector
