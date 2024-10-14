@@ -13,12 +13,12 @@
 #        var:
 #          vector_conf
 
-  - name: Vector config
-    assert:
-      that:
-        - vector_conf.failed == false
-      success_msg: "Vector config exists"
-      fail_msg: "Vector config no exists
+    - name: Vector config
+      assert:
+        that:
+          - vector_conf.failed == false
+        success_msg: "Vector config exists"
+        fail_msg: "Vector config no exists"
 
 #  - name: Vector launched
 #    assert:
