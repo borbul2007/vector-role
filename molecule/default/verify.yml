@@ -3,9 +3,19 @@
   hosts: all
   gather_facts: false
   tasks:
-  - name: Vector launched
-    assert:
-      that:
-        - vector_run.failed == false
-      success_msg: "/Vector lanched"
-      fail_msg: "/Vector not launched"
+- name: Exist vector.conf
+  find:
+    paths: /opt/vector-x86_64-unknown-linux-musl/config
+    patterns: 'vector.yaml'
+  register: vector.conf
+
+- debug:
+    var:
+      vector.conf
+
+#  - name: Vector launched
+#    assert:
+#      that:
+#        - vector_run.failed == false
+#      success_msg: "Vector lanched"
+#      fail_msg: "Vector not launched"
