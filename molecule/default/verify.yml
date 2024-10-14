@@ -6,4 +6,4 @@
   - name: Vector is start
     assert:
       launch.failed
-      that: false
+        that: false
