@@ -10,8 +10,15 @@
 - name: store the files in the /tmp/foo directory in the 'out' variable
   find:
     paths: /opt/vector
+    recurse: true
+    use_regex: true
+    patterns: (?i).*vector
   register: out
 
 - debug:
-    var: out
+    msg: "{{ item.path }}"
+    with_items: "{{ out.files }}"
+    when: out.matched > 0
+    loop_control:
+      label: "{{ item.path }}"
 
