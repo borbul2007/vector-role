@@ -3,6 +3,7 @@
   hosts: all
   gather_facts: false
   tasks:
-  - name: Assertion
+  - name: Vector is start
     assert:
-      that: true
+      launch.failed
+      that: false
