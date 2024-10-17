@@ -9,6 +9,7 @@
         patterns: 'vector.yaml'
       register: vector_conf
 
+
     - name: Vector config
       assert:
         that:
