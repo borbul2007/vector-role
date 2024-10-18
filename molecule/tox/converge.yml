@@ -3,6 +3,6 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: "Install Vector"
-      include_role:
-        name: "vector-role"
+    - name: Replace this task with one that validates your content
+      ansible.builtin.debug:
+        msg: "This is the effective test"
